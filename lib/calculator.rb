@@ -9,10 +9,16 @@ class Calculator
     @total
   end
 
-  def add(a, b)
-    @total = a + b
+  def add(a)
+    @total += a 
   end
 
-  
+  def clear
+    @total = 0
+  end
+
+  def subtract(a)
+    @total -= a
+  end
 
 end
